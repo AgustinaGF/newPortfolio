@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import colorSharp from '../assets/image/color-sharp.png'
+
 
 
 
@@ -78,10 +78,10 @@ return(<section className="skill" id="skills">
         <h2>Skills</h2>
         <p>Technologies</p>
         <Carousel responsive={responsive} infinite={true} className="skill-slider">
-            {SKILLS.map((skill)=>{    
+            {SKILLS.map((skill,index)=>{    
             return(      
             <div className="item">
-                <img src={skill.image} alt="Image"/>
+                <img src={skill.image} key={index} alt="skillImage"/>
                 <h5>{skill.name}</h5>
             </div>)
             })}            
@@ -90,7 +90,7 @@ return(<section className="skill" id="skills">
        </Col> 
     </Row>
 </Container>
-<image className="background-image-left" src={colorSharp}/>
+{/* <image className="background-image-left" src={colorSharp}/> */}
 </section>)
 
 }
