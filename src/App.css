@@ -360,6 +360,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Projects Css ************/
+.container-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 3%;
+  margin: 2em;
+  display: flex;
+  justify-content: center;
+}
+
+
 .project {
   padding: 80px 0;
   position: relative;
@@ -449,8 +460,16 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 30px;
   overflow: hidden;
   margin-bottom: 24px;
+  cursor: pointer;
+  height: 519px;
+  width: 380px;
 }
-
+.proj-imgbx>img {
+  min-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  /* transition: all 0.2s ease-in-out; */
+}
 .proj-imgbx::before {
   content: "";
   background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
@@ -503,3 +522,62 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   right: 0;
   z-index: -4;
 }
+
+@media only screen and (min-width: 550px) and (max-width: 1024px) {
+  * {
+    padding: 0%;
+    border: 0px;
+    margin: 0%;
+  }
+     .container-images {
+       display: grid;
+       grid-template-columns: 1fr;
+       gap: 2%;
+       margin-bottom: 5em;
+      justify-content: center;
+     }
+    .proj-imgbx {
+      position: relative;
+      border-radius: 30px;
+      overflow: hidden;
+      margin-bottom: 24px;
+      cursor: pointer;
+      height: 450px;
+      width: 380px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 549px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    padding: 0%;
+    border: 0px;
+    margin: 0%;
+  }
+  
+ .proj-imgbx {
+      position: relative;
+      border-radius: 30px;
+      overflow: hidden;
+      margin-bottom: 24px;
+      cursor: pointer;
+      height: 400px;
+      width: 300px;
+    }
+
+        .container-images {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 2%;
+          margin-bottom: 5em;
+          justify-content: center;
+        }
+ }
+
+ /* .social-icon{
+  display: flex;
+  justify-content: space-between;
+ } */

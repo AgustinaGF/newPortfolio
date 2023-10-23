@@ -30,7 +30,31 @@ export const Projects =()=>{
     {title:'Movies',
     description:'poner description',
     imgUrl:Movies,
-    }
+    },
+     {title:'Games',
+    description:'poner description',
+    imgUrl:Games,
+    },
+    {title:'Python Project',
+    description:'poner description',
+    imgUrl:Python,
+    },
+    {title:'Pokedex',
+    description:'poner description',
+    imgUrl:Pokemom,
+    },
+    {title:'Ecommerce',
+    description:'poner description',
+    imgUrl:Ecommerce,
+    },
+    {title:'Keywise',
+    description:'poner description',
+    imgUrl:Keywise,
+    },
+    {title:'Flutter Project Facebook',
+    description:'poner description',
+    imgUrl:Facebook,
+    },
    ] 
    return(
    <section className='project' id='project'>
@@ -39,7 +63,7 @@ export const Projects =()=>{
            <Col>
            <h2>Projects</h2>
            <Tab.Container id='projects-tabs' defaultActiveKey='first'>
-           <Nav variant='pills' defaultActiveKey='/home'>
+           <Nav variant='pills' className='nav-pills mb-5 justify-content-center align-items-center' id='pills-tab'>
             <Nav.Item>
                 <Nav.Link eventKey='first'>Tab One</Nav.Link>
             </Nav.Item>
@@ -52,7 +76,7 @@ export const Projects =()=>{
            </Nav>
            <Tab.Content>
                     <Tab.Pane eventKey="first">
-                      <Row>
+                      <Row className='container-images'>
                         {
                           projects.map((project, index) => {
                             return (
