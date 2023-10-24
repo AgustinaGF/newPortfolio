@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-
+import colorSharp from "../assets/image/color-sharp.png"
 
 
 
@@ -70,7 +70,8 @@ const SKILLS = [
     },	
 ]
 
-return(<section className="skill" id="skills">
+return(
+<section className="skill" id="skills">
 <Container>
     <Row>
        <Col>
@@ -90,7 +91,7 @@ return(<section className="skill" id="skills">
        </Col> 
     </Row>
 </Container>
-{/* <image className="background-image-left" src={colorSharp}/> */}
+<image className="background-image-left" src={colorSharp}/>
 </section>)
 
 }

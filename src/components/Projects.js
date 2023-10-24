@@ -57,46 +57,29 @@ export const Projects =()=>{
     },
    ] 
    return(
-   <section className='project' id='project'>
+   <section className='project' id='projects'>
     <Container>
         <Row>
            <Col>
            <h2>Projects</h2>
-           <Tab.Container id='projects-tabs' defaultActiveKey='first'>
-           <Nav variant='pills' className='nav-pills mb-5 justify-content-center align-items-center' id='pills-tab'>
-            <Nav.Item>
-                <Nav.Link eventKey='first'>Tab One</Nav.Link>
-            </Nav.Item>
-             <Nav.Item>
-                <Nav.Link eventKey='second'>Tab Two</Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-                <Nav.Link eventKey='third'>Tab Three</Nav.Link>
-            </Nav.Item>
-           </Nav>
-           <Tab.Content>
-                    <Tab.Pane eventKey="first">
-                      <Row className='container-images'>
-                        {
-                          projects.map((project, index) => {
-                            return (
-                              <ProjectCard
-                                key={index}
-                                {...project}
-                                />
+           
+                  <Row className='container-images'>
+                      {
+                        projects.map((project, index) => {
+                          return (
+                            <ProjectCard
+                              key={index}
+                              {...project}
+                              />
                             )
                           })
                         }
-                      </Row>
-                    </Tab.Pane>
-            <Tab.Pane eventKey='second'>Lorem</Tab.Pane>
-            <Tab.Pane eventKey='third'>Lorem</Tab.Pane>
-           </Tab.Content>
-           </Tab.Container>
+         
+                  </Row>
            </Col> 
         </Row>
     </Container>
-    <img className='background-image-right' src={colorSharp2} alt='color-img'></img>
+     <image className="background-image-right" src={colorSharp2}></image>
    </section>
    )
 }

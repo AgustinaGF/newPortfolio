@@ -29,7 +29,6 @@ export const NavBar =()=>{
   return (
     <Navbar expand="md" className={scrolled?"scrolled":""} >
       <Container>
-      
         <Navbar.Toggle aria-controls="basic-navbar-nav">
         <span className='navbar-toggle-icon'></span>
         </Navbar.Toggle>
@@ -42,11 +41,12 @@ export const NavBar =()=>{
           <span className='navbar-text'>
            
             <div className='social-icon'>
-            <a href='#'><img src={navIcon1} alt='icon1'/></a>
-            <a href='#'><img src={navIcon2} alt='icon2'/></a>
-            <a href='#'><img src={navIcon3} alt='icon3'/></a>
+            <a href="https://www.linkedin.com/in/agustina-gomez-fernandez/"
+							target="blank"><img src={navIcon1} alt='icon1'/></a>
+            <a href="https://github.com/AgustinaGF" target="blank"><img src={navIcon2} alt='icon2'/></a>
+            <a  href="https://twitter.com/Agustinagomezf" target="blank"><img src={navIcon3} alt='icon3'/></a>
             </div>
-            <button className='vvd' onClick={()=>console.log('connect')}><span>Let's Connect</span></button>
+            {/* <button className='vvd' onClick={()=>console.log('connect')}><span>Let's Connect</span></button> */}
           </span>
         </Navbar.Collapse>
       </Container>
