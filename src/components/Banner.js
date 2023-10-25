@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { Container, Row, Col} from "react-bootstrap"
 import headerImg from '../assets/image/header-img.svg'
 import 'animate.css';
+
 import TrackVisibility from 'react-on-screen';
 
 export const Banner=()=>{
