@@ -5,7 +5,7 @@ export const ProjectCard=({title, description, imgUrl,url})=>{
 
 
     return(
-        <Col lg={5} sm={9} md={7} xs={10}>
+        <Col lg={5} sm={9} md={7} xs={13} className='col-image' >
             <a href={url}>
             <div className='proj-imgbx'>
                 <img src={imgUrl} alt='img'/>

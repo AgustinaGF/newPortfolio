@@ -18,12 +18,12 @@ export const Projects =()=>{
     {title:'Podcast',
     description:'This was my first project, it is a static responsive website with HTML and CSS. From this site you can listen to real podcasts with images and texts related to the content.',
     imgUrl:Podcast,
-    url:'proyecto-podcast-delta.vercel.app'
+    url:'https://proyecto-podcast-delta.vercel.app'
     },
     {title:'GifOS Project',
     description:'This is a Gifs website, I created it with JavaScript and it is integrated with the Giphy API, on this site you can search, view and create Gifs.',
     imgUrl:Gif,
-    url:'proyecto-gifs.vercel.app'
+    url:'https://proyecto-gifs.vercel.app'
     },
     {title:'Delilah Resto',
     description:'In this project I integrated an API that allows performing CRUD operations for a restaurant. NodeJS, Express, Sequelize, JWT, Dotenv, bcrypt, MySQL and Postman were used.',
@@ -62,7 +62,7 @@ export const Projects =()=>{
     },
     {title:'Flutter Project Facebook',
     description:'This project is a copy of facebook created with flutter',
-    url:'facebookflutterproject.web.app/',
+    url:'https://facebookflutterproject.web.app/',
     imgUrl:Facebook
     },
    ] 
